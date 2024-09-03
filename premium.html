@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: #090E29;
+            font-family: "Poppins", sans-serif;
+            margin: 50px 50px 0 50px;
+            display: flex;
+            flex-direction: column;
+            min-height: 95vh;
+        }
+
+        header{
+            background-color: #090E29;
+            margin-top: 0;
+            height: 70px;
+            width: 100%;
+            margin: -50px;
+            box-shadow: 8px 13px 70px 0px rgb(0, 0, 0, 0.5);
+            position: fixed;
+            z-index: 1000;
+        }
+
+        .headlogo{
+            width: 100px;
+            margin-left: 100px;
+            margin-top: 12px;
+            margin-right: 270px;
+            float: left;
+        }
+
+        .subpages{
+            color: #E5E9FA;
+            display: inline-flex;
+            gap: 6rem;
+            margin-top: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .Nova{
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 1000px;
+            letter-spacing: 0px;
+            margin: 0px;
+            color: #E5E9FA;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        li{
+            list-style: none;
+            color: white;
+        }
+
+        .signin{
+            position: relative;
+            margin-top: -10px;
+            background-color: #E5E9FA;
+            padding: 10px 10px 6px 10px;
+            border-radius: 15px;
+        }
+
+        .subpages > .signin > li{
+            color: #fffbfb;
+            text-shadow: -1px 1px 0 #000,
+            1px 1px 0 #000,
+            1px -1px 0 #000,
+            -1px -1px 0 #000;
+            letter-spacing: 3px;
+            font-weight: 1000;
+        }
+
+        .prembox{
+            display: flex;
+            flex-wrap: wrap;
+            height: 100vh;
+            gap: 10px;
+            justify-content: space-evenly;
+            align-content: center;
+        }
+
+        h1{
+            color: #AAB3E4;
+        }
+
+        .premcards{
+            text-align: center;
+            background-color: #33374B;
+            color: white;
+            padding: 50px 100px 150px 100px;
+            max-height: 200px;
+            max-width: 200px;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            box-shadow: 5px 8px 20px 0px rgb(0, 0, 0, 0.5);
+            
+        }
+
+        ul{
+            padding: 0px;
+        }
+
+        li{
+            list-style-type: none;
+            margin-bottom: 5px;
+        }
+
+        .tick{
+            color: #AAB3E4;
+        }
+
+        .cross{
+            color: #090E29;
+            font-weight: bolder;
+        }
+
+        button{
+            background-color: #E5E9FA;
+            padding: 10px 15px 10px 15px;
+            border-radius: 8px;
+            border: 0px none;
+            
+        }
+
+        footer {
+            color: #E5E9FA;
+            border-top: 2px solid #E5E9FA;
+        }
+
+        .slogan{
+            float: left;
+        }
+
+        .copyright{
+            text-align: right;
+        }
+
+
+        @media (max-width:600px){
+            .prembox{
+                margin-top: 100%;
+            }
+            .headlogo{
+                margin-left: 15px;
+            }
+            footer{
+                margin-top: 500px;
+                text-align: center;
+            }
+            .slogan{
+                float: none;
+            }
+            .copyright{
+                text-align: center;
+            }
+
+        }
+
+        
+        
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headlogo">
+          <h3 class="Nova">Nova</h3>
+        </div>
+        <ul class="subpages">
+          <a target="_blank" href="./index.html"><li>Home</li></a>
+          <a target="_blank" href="./premium.html"><li>Premium</li></a>
+          <a target="_blank" href="https://www.google.com/search?q=about+us&oq=about+us&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDEyNjlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"><li>About Us</li></a>
+          <a target="_blank" href="https://www.google.com/search?q=contact+us&oq=contact+us&gs_lcrp=EgZjaHJvbWUyFAgAEEUYORhDGIMBGLEDGIAEGIoFMhIIARAAGEMYgwEYsQMYgAQYigUyEggCEAAYQxiDARixAxiABBiKBTIMCAMQABhDGIAEGIoFMgwIBBAAGEMYgAQYigUyDAgFEAAYQxiABBiKBTIKCAYQABixAxiABDINCAcQABiDARixAxiABDINCAgQABiDARixAxiABDINCAkQABiDARixAxiABNIBCDI5MjFqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"><li>Contact Us</li></a>
+          <a target="_blank" class="signin" href="https://www.google.com/search?q=sign+in&oq=sign+in&gs_lcrp=EgZjaHJvbWUyFAgAEEUYORhDGIMBGLEDGIAEGIoFMg8IARAAGEMYsQMYgAQYigUyDAgCEAAYQxiABBiKBTIPCAMQABhDGLEDGIAEGIoFMhIIBBAAGEMYgwEYsQMYgAQYigUyBggFEEUYPTIGCAYQRRg8MgYIBxBFGDzSAQgyNTM1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"><li>Sign In</li></a>
+        </ul>
+    </header>
+
+    <div class="prembox">
+        <div class="premcards">
+            <h3>Basic</h3>
+            <h1>$9.99/month</h1>
+            <ul>
+                <li><spam class="tick">✓</spam> 10GB Storage</li>
+                <li><spam class="tick">✓</spam> 1 User</li>
+                <li><spam class="cross">✗</spam> Support</li>
+            </ul>
+            <button>
+                Sign Up
+            </button>
+            
+        </div>
+        <div class="premcards">
+            <h3>Standard</h3>
+            <h1>$19.99/month</h1>
+            <ul>
+                <li><spam class="tick">✓</spam> 50GB Storage</li>
+                <li><spam class="tick">✓</spam> 5 Users</li>
+                <li><spam class="tick">✓</spam> Phone and Email Support</li>
+            </ul>
+            <button>
+                Sign Up
+            </button>
+            
+        </div>
+        <div class="premcards">
+            <h3>Premium</h3>
+            <h1>$49.99/month</h1>
+            <ul>
+                <li><spam class="tick">✓</spam> 100GB Storage</li>
+                <li><spam class="tick">✓</spam> 10 Users</li>
+                <li><spam class="tick">✓</spam> 24/7 Support</li>
+            </ul>
+            <button>
+                Sign Up
+            </button>
+        </div>
+    </div>    
+
+    <footer>
+        <p class="slogan">Create. Develop. Design.</p>
+        <p class="copyright">&#169 Usman Amanat 2024</p>
+    </footer>
+
+</body>
+</html>
